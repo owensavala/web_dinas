@@ -1,0 +1,257 @@
+.text-infow {
+    color: #17a2b8;
+    /* Warna info dalam tema Bootstrap */
+}
+
+/* Jika Anda ingin menambahkan gaya lain, seperti hover, Anda dapat menambahkan properti CSS tambahan */
+.text-infow:hover {
+    text-decoration: underline;
+    /* Contoh: garis bawah saat hover */
+}
+
+img.svg-icon {
+    fill: #0066ff;
+
+    /* Ganti dengan warna yang diinginkan */
+}
+
+.border-t-b {
+    border-left: rgba(0, 0, 0, 0.486);
+    border-right: rgba(0, 0, 0, 0.486);
+    border-style: groove;
+    border-width: 1;
+}
+.xxx{
+    color: #fce3c6;
+    border-color: #d2691e;
+    
+}
+.border-diskeb {
+    --bs-border-opacity: 1;
+    border-color: #d2691e !important;
+}
+
+/* Gaya umum untuk tombol */
+.btnx {
+    display: inline-block;
+    padding: 8px 16px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    font-size: 14px;
+    /* Sesuaikan ukuran font sesuai kebutuhan */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    /* Sudut melengkung pada sudut tombol */
+}
+
+/* Gaya untuk tombol dengan warna latar belakang biru (info) */
+.btn-infox {
+    background-color: #17a2b8;
+    /* Warna biru info - sesuaikan dengan kebutuhan */
+    color: #fff;
+    /* Warna teks - sesuaikan dengan kebutuhan */
+}
+
+/* Hover effect untuk tombol */
+.btnx:hover {
+    background-color: #138496;
+    /* Warna biru yang lebih gelap saat tombol dihover - sesuaikan dengan kebutuhan */
+    color: #fff;
+    /* Warna teks saat tombol dihover - sesuaikan dengan kebutuhan */
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Isi dropdown, awalnya tersembunyi */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Link dalam dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Tampilkan dropdown saat tombol dropdown dihover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Animasi text bergeser dari kanan ke kiri */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(400px);
+    }
+
+    100% {
+        transform: translateX(-400px);
+    }
+}
+
+@keyframes move {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -60%;
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.monitor-wrapper {
+    background: #050321;
+    width: 770px;
+    height: 130px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Gaya untuk monitor */
+.monitor {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset;
+}
+
+/* Gaya teks */
+.sliding-text {
+    position: relative;
+    display: inline-block;
+    animation: move 20s infinite linear;
+    text-shadow: #050321;
+    /* Animasi gerakan teks */
+    color: #080808;
+    /* Ubah durasi atau gaya animasi sesuai kebutuhan Anda */
+}
+
+/* Merubah warna teks */
+
+/* Merubah warna elemen lainnya */
+.text-color {
+    color: #d2691e;
+    /* Merah Cabe */
+}
+
+/* Merubah warna elemen saat dihover */
+.text-color:hover {
+    color: #ffd700;
+    /* Kuning Kunyit */
+}
+
+.btn-shine {
+    color: #ffffff;
+    background: linear-gradient(to right, #d2691e 0, white 10%, #d2691e 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+.hover {
+    border: 5px solid;
+    border-image: repeating-linear-gradient(135deg,
+            #f8ca00 0 10px,
+            #e97f02 0 20px,
+            #bd1550 0 30px) 8;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px,
+            #0000 90deg,
+            #000 0) var(--_i, 200%) 0 / 200% var(--_i, 8px) border-box no-repeat,
+        conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+}
+
+.hover:hover {
+    --_i: 100%;
+    color: #cc333f;
+    transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+}
+
+.cop {
+    --s: 0.1em;
+    /* the thickness of the line */
+    --c: #0011ff;
+    /* the color */
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.cop:hover {
+    --_p: 100%;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://th.bing.com/th/id/OIG2.0Gs7Y2Iw2Dv5wbDr.G4i?pid=ImgGn") center center/cover no-repeat;
+    /* Ganti 'gambar-anda.jpg' dengan nama file gambar Anda */
+    opacity: 0.8;
+    /* Atur tingkat transparansi sesuai kebutuhan (0 hingga 1) */
+    z-index: -1;
+    /* Pastikan z-index lebih rendah untuk memastikan tidak terhalangi oleh konten lainnya */
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Gaya CSS yang akan diterapkan pada layar dengan lebar maksimum 767 piksel */
+    .border-t-b {
+        border-left: 0;
+        border-right: 0;
+        border-top: rgba(0, 0, 0, 0.486);
+        border-bottom: rgba(0, 0, 0, 0.486);
+        border-style: groove;
+        border-width: 1;
+    }
+}

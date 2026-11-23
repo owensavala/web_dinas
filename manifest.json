@@ -1,0 +1,23 @@
+{
+  "name": "Dinas Kebudayaan Kota Ternate",
+  "short_name": "Disbud Ternate",
+  "description": "Portal Resmi Dinas Kebudayaan Pemerintah Kota Ternate",
+  "start_url": "/web_dinas/index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2545",
+  "icons": [
+    {
+      "src": "asset/gmbr/1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/gmbr/1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

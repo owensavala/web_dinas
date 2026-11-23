@@ -1,0 +1,2 @@
+# Cegah akses langsung via browser ke dokumen internal
+Deny from all

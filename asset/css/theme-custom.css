@@ -1,0 +1,288 @@
+/* Theme Custom CSS - Dinas Kebudayaan Kota Ternate */
+:root {
+    --primary-color: #8b340f;
+    --primary-hover: #722909;
+    --secondary-color: #d97706;
+    --accent-gold: #c58f32;
+    --dark-color: #1c1917;
+    --light-bg: #f8fafc;
+    --card-border: #f1f5f9;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.65;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 0.825rem;
+    padding: 7px 0;
+    border-bottom: 2px solid var(--accent-gold);
+}
+.topbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.topbar a:hover {
+    color: #fbbf24;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 12px 0;
+}
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.navbar-custom .brand-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.2;
+}
+.navbar-custom .brand-subtitle {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.navbar-custom .nav-link {
+    font-weight: 600;
+    font-size: 0.925rem;
+    color: #334155 !important;
+    padding: 8px 14px !important;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--primary-color) !important;
+    background-color: #fef2f2;
+}
+.navbar-custom .dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+}
+.navbar-custom .dropdown-item {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+.navbar-custom .dropdown-item:hover {
+    background-color: #fef2f2;
+    color: var(--primary-color);
+}
+
+/* Announcement Ticker */
+.announcement-bar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 0.85rem;
+    padding: 8px 0;
+}
+.announcement-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* Cards & Layout */
+.content-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+}
+.section-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #1e293b;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e2e8f0;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.section-title.text-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* News Card */
+.news-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+.news-card .news-img-wrap {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+.news-card .news-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.news-card:hover .news-img-wrap img {
+    transform: scale(1.06);
+}
+.news-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.news-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.news-date {
+    font-size: 0.8rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.news-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+.news-title a {
+    color: #1e293b;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.news-title a:hover {
+    color: var(--primary-color);
+}
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.btn-primary-custom:hover {
+    background: linear-gradient(135deg, var(--primary-hover), var(--primary-color));
+    color: white;
+    box-shadow: 0 4px 12px rgba(139, 52, 15, 0.3);
+}
+
+/* Sidebar Widgets */
+.sidebar-widget {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+}
+.sidebar-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e2e8f0;
+}
+.sidebar-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+.footer-main {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 60px 0 25px;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--accent-gold);
+}
+.footer-main h5 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.footer-main a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.footer-main a:hover {
+    color: #fbbf24;
+    padding-left: 4px;
+}
+.footer-bottom {
+    border-top: 1px solid #1e293b;
+    padding-top: 25px;
+    margin-top: 40px;
+    font-size: 0.825rem;
+}

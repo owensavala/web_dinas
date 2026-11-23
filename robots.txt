@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dokumen_internal/
+Disallow: /asset/file/
+
+Sitemap: http://localhost/web_dinas/sitemap.xml

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: web_dinas
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASS=secret123
+      - DB_NAME=diskeb
+      - DB_PORT=3306
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.4
+    container_name: db_dinas
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret123
+      MYSQL_DATABASE: diskeb
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./diskeb.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3307:3306"
+
+volumes:
+  db_data:
